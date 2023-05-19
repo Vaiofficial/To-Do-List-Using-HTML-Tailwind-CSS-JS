@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>To do List WebApp</title>
+  </head>
+  <body>
+    <div class="bg-purple-600 h-screen w-full p-10">
+      <div class="bg-white w-2/5 min-h-min rounded-xl p-6 mb-10 m-auto">
+        <div class="py-4 flex space-x-3 justify-center mr-9">
+          <span
+            ><h2 class="font-bold text-blue-900 text-xl">
+              Welcome!! Make Your To Do List
+            </h2></span
+          >
+          <span><img class="w-9" src="Components/to-do-list.png" /></span>
+        </div>
+
+        <div class="flex space-x-2 justify-center mr-8">
+          <input
+            class="bg-slate-200 text-white shadow appearance-none border rounded-lg w-64 py-2 px-3 leading-tight focus:outline-none focus:shadow-outline focus:bg-red-500"
+            id="input-box"
+            type="text"
+            placeholder="Add Your Task "
+          />
+          <button
+            class="bg-green-500 rounded-lg py-1.5 px-2 w-24 cursor-pointer " onclick="addTask()"
+          >
+            Submit
+          </button>
+        </div>
+
+        <div class="mt-7 center" >
+          <ul class="relative" id="list-container">
+            <!-- <li class="cursor-pointer mb-8 px-20 before:left-10 before:top-0.5 before:p-3 before:absolute before:h-5 before:w-5 before:bg-cover before:bg-center before:bg-[url('/Components/square.png') before:bg-[url('/Components/cross.png')] line-through">Task 1</li>
+            <li class="cursor-pointer px-20 mb-8 before:left-10 mt-3 before:absolute before:h-5  before:p-3  before:w-5 before:bg-cover before:bg-center before:bg-[url('/Components/square.png')]">Task 2</li>
+            <li class="cursor-pointer mb-10 px-20 before:left-10 mt-3 before:absolute before:h-5 before:w-5  before:p-3  before:bg-cover before:bg-center before:bg-[url('/Components/square.png')]">Task 3</li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <script src="main.js"></script>
+  </body>
+</html>
